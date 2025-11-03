@@ -20,6 +20,16 @@ let Employee_Tracker: Employee[] = [
 ];
 console.log(Employee_Tracker)
 
+function addEmployee(newEmployee: Employee): void {
+  Employee_Tracker.push(newEmployee);
+}
+addEmployee({
+  Employee: "Aarav",
+  Employee_id: 570,
+  task: ["New Onboarding", "Setup Dev Environment"]
+});
+
+console.log(Employee_Tracker)
 // union / intersection ty[e ]
 // union type 
 type CouponCode = {
